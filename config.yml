@@ -1,0 +1,57 @@
+##########################################################
+#                DefaultItemChanger Config               #
+##########################################################
+
+Use_In_Game_Editor_Over_Config: true
+#If this is enabled, '/dic item' is used to control item drops
+
+Allow_Multiple_Item_Drops: false
+#If this is enabled, multiple possible items can drop
+
+#IMPORTANT: FOR ITEM ID'S MAKE SURE THAT YOU INCLUDE THE FULL ITEM ID
+#EVEN IF THE INTERNET SAYS THE ITEM ID IS "57" BE SURE TO PUT "57:0"
+
+#Custom Item Example
+#This would turn normal dirt (item id 3:0) into the dirt described below
+#"3:0":
+# name: "&1Custom Dirt"
+# lore:
+#  - "&2Lore line #1"
+#  - "&3Lore line #2"
+# enchantments:
+#  - "knockback:20"
+# tags:
+#  - ""
+
+#Explanation
+#name - Single line item name. Supports color codes. Can't be left empty.
+#lore - Multiple line item lore. Supports color codes. Can be left empty.
+#enchantments - Multiple line enchantments. Supports impossible vanilla enchantments. Supports color codes. Can be left empty.
+#  possible enchantments (enchantments may change what they do depending on the type of item they are placed on) :::
+#    "arrowdamage" - Adds arrow damage
+#    "arrowfire" - Adds a fire effect to arrows
+#    "arrowinfinite" - Makes you never run out of arrows
+#    "damage" - Increases damage
+#    "digspeed" - Increases dig speed
+#    "durability" - Makes tools last longer
+#    "fireaspect" - Catches things on fire
+#    "knockback" - Knocks things back no matter what it's on
+#    "lootbonusblock" - Blocks give more loot no matter what it's on
+#    "lootbonusmob" - Mobs give more loot no matter what it's on
+#    "luck" - Gives you luck
+#    "protectionfire" - Makes armor protect you from fire
+#    "protectionfall" - Makes armor protect you from falling
+#    "silktouch" - Makes mined blocks stay in whatever state they were mined in
+#tags - Multiple line tags. Allows certain items to have characteristics not described by lore or enchantments. Can be left empty.
+#  possible tags :::
+#    "skullskin:PlayerName" - Changes the texture of a skull to a certain player's head
+#    "durability:#" - Changes the durability of items that have durability. The bigger the number, the more damage is done to the item. 0 is no damage.
+#For all the things that can be left empty, either don't include it at all or add a single <- ""> as seen in the above example as a tag.
+#Add as many items as you like below
+
+##########################################################
+#                         Version                        #
+##########################################################
+
+VERSION: 3
+#No touchy
